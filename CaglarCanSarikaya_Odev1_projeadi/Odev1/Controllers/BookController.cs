@@ -30,6 +30,9 @@ namespace Odev1.Controllers
         }
 
 
+        /// <summary>
+        /// İstenilen sayıda kitap üretmek için kullanılır. Sayıyı gönderin ve rastgele kitaplar üretilsin.
+        /// </summary>
         [HttpGet("Create")]
         public ActionResult CreateBook(int num)
         {
@@ -53,6 +56,9 @@ namespace Odev1.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Kayıtlı kitapların hepsini görüntülemek için kullanabilirsiniz
+        /// </summary>
         [HttpGet("GetAll")]
         public List<BookViewModel> GetAll()
         {
@@ -60,6 +66,9 @@ namespace Odev1.Controllers
             return _mapper.Map<List<BookViewModel>>(books); ;
         }
 
+        /// <summary>
+        /// Kayıtlı kitaplarda id ile arama yapabilirsiniz. Id parametresi route ile alınacaktır. İlk eklenenin id si 0 dan başlayarak +1 şeklinde gidecektir.
+        /// </summary>
         [HttpGet("FromRouteGetById/{Id}")]
         public Book FromRouteGetById([FromRoute] int Id)
         {
@@ -67,6 +76,10 @@ namespace Odev1.Controllers
             return books?.Where(x => x.Id == Id).SingleOrDefault();
         }
 
+
+        /// <summary>
+        /// Kayıtlı kitaplarda id ile arama yapabilirsiniz. Id parametresi query stringden alınacaktır. İlk eklenenin id si 0 dan başlayarak +1 şeklinde gidecektir.
+        /// </summary>
         [HttpGet("FromQueryGetById")]
         public Book FromQueryGetById([FromQuery] int Id)
         {
@@ -74,6 +87,10 @@ namespace Odev1.Controllers
             return books?.Where(x => x.Id == Id).SingleOrDefault();
         }
 
+
+        /// <summary>
+        /// Yeni kitap eklemek için kullanabilirsiniz
+        /// </summary>
         [HttpPost]
         public ActionResult AddNewBook([FromBody] BookViewModel book)
         {
@@ -100,6 +117,10 @@ namespace Odev1.Controllers
             return Ok();
         }
 
+
+        /// <summary>
+        /// id 'sini gönderdiğiniz kitabı güncellersiniz
+        /// </summary>
         [HttpPut("{Id}")]
         public ActionResult UpdateBook(int Id, [FromBody] BookViewModel book)
         {
@@ -124,6 +145,9 @@ namespace Odev1.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// id' sini gönderdiğini kitabı silersiniz.
+        /// </summary>
         [HttpDelete("{Id}")]
         public ActionResult DeleteBook(int Id)
         {

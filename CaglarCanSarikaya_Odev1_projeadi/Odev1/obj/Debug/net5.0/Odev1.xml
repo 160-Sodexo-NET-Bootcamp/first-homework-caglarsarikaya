@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Odev1</name>
+    </assembly>
+    <members>
+        <member name="M:Odev1.Controllers.BookController.CreateBook(System.Int32)">
+            <summary>
+            İstenilen sayıda kitap üretmek için kullanılır. Sayıyı gönderin ve rastgele kitaplar üretilsin.
+            </summary>
+        </member>
+        <member name="M:Odev1.Controllers.BookController.GetAll">
+            <summary>
+            Kayıtlı kitapların hepsini görüntülemek için kullanabilirsiniz
+            </summary>
+        </member>
+        <member name="M:Odev1.Controllers.BookController.FromRouteGetById(System.Int32)">
+            <summary>
+            Kayıtlı kitaplarda id ile arama yapabilirsiniz. Id parametresi route ile alınacaktır. İlk eklenenin id si 0 dan başlayarak +1 şeklinde gidecektir.
+            </summary>
+        </member>
+        <member name="M:Odev1.Controllers.BookController.FromQueryGetById(System.Int32)">
+            <summary>
+            Kayıtlı kitaplarda id ile arama yapabilirsiniz. Id parametresi query stringden alınacaktır. İlk eklenenin id si 0 dan başlayarak +1 şeklinde gidecektir.
+            </summary>
+        </member>
+        <member name="M:Odev1.Controllers.BookController.AddNewBook(Odev1.DTO.BookViewModel)">
+            <summary>
+            Yeni kitap eklemek için kullanabilirsiniz
+            </summary>
+        </member>
+        <member name="M:Odev1.Controllers.BookController.UpdateBook(System.Int32,Odev1.DTO.BookViewModel)">
+            <summary>
+            id 'sini gönderdiğiniz kitabı güncellersiniz
+            </summary>
+        </member>
+        <member name="M:Odev1.Controllers.BookController.DeleteBook(System.Int32)">
+            <summary>
+            id' sini gönderdiğini kitabı silersiniz.
+            </summary>
+        </member>
+    </members>
+</doc>
