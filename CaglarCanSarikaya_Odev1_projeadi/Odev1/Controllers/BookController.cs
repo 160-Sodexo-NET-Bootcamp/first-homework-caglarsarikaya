@@ -102,7 +102,7 @@ namespace Odev1.Controllers
             var mapped = _mapper.Map<Book>(book);
 
             //increment the Id
-            mapped.Id = books.Count();
+            mapped.Id = books.LastOrDefault()?.Id + 1 ?? 0;
 
             books.Add(mapped);
 

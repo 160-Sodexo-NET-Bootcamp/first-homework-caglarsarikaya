@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aM4w3L/4ceGx+wzmJ8zWFxWzsEFm2svtJ07iKaUO6uuJl0yH+i9bZNHV76U+CbVGOXkEfdRbc1kh31sJU6YHrA==",
+  "dgSpecHash": "wPDNhTWak/ndF1q4RMufohFj6+f9/hD0pWbZg4kcW8By4NyQ9b65mnCUle4zcFXUcnm/dxH9DitKDprIUyclDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc\\source\\repos\\CaglarCanSarikaya\\Odev1\\Odev1.csproj",
+  "projectFilePath": "C:\\Users\\pc\\Documents\\GitHub\\first-homework-caglarsarikaya\\CaglarCanSarikaya_Odev1_projeadi\\Odev1\\Odev1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\bogus\\34.0.1\\bogus.34.0.1.nupkg.sha512",
